@@ -1,0 +1,17 @@
+{
+	"cmd": ["coffee", "-c","-o","./","$file_path"],
+	"path": "/usr/bin:$PATH",
+	"selector": "source.coffee",
+	"working_dir": "$project_path",
+	"variants":[
+		{
+			"cmd":["chromium-browser", "http://www.ri.com/prototype/static/html/customer/list-list-en.html"],
+			"name":"Run"
+		},
+		{
+			"cmd": ["/home/eleven/project/manggis_frontend/build-prototype.sh"],
+			"selector":"source.coffee, source.js, source.html, source.css, source.less",
+			"name":"Manggis"
+		}
+	]
+}
